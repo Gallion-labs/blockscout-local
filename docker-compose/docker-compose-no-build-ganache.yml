@@ -17,7 +17,7 @@ services:
       - db
       - smart-contract-verifier
       - redis_db
-    image: blockscout/blockscout:${DOCKER_TAG:-latest}
+    image: blockscout/blockscout:5.1.1-prerelease-1cd121db
     pull_policy: always
     restart: always
     container_name: 'blockscout'
